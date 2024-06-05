@@ -1,0 +1,1 @@
+This is my project in Web Development in HTML and CSS and Javascript for my internship at Encryptix.
