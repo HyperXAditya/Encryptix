@@ -3,72 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style1.css">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>John Doe</h1>
-        <p>Web Developer</p>
+    <!-- Header Section -->
+    <header id="home">
+        <div class="header-container">
+            <h1 class="logo">Aditya Raj</h1>
+            <p class="tagline">Web Developer | Designer</p>
+        </div>
     </header>
 
+    <!-- About Section -->
     <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="profile.jpg" alt="John Doe">
-            <p>I am a passionate web developer with experience in HTML, CSS, and JavaScript. I enjoy creating responsive and user-friendly websites.</p>
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I am currently an undergraduate at IIT(BHU) pursuing mechanical engineering with interest in Web development and data science.</p>
+            </div>
+            <div class="about-image">
+                <img src="profile.jpg" alt="Aditya Raj">
+            </div>
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
-        <div class="container">
+        <div class="skills-container">
             <h2>Skills</h2>
             <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>JavaScript</li>
-                <li>Responsive Design</li>
+                <li>React</li>
                 <li>Bootstrap</li>
-                <li>Git</li>
+                <!-- Add more skills as needed -->
             </ul>
         </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
+        <div class="projects-container">
             <h2>Projects</h2>
             <div class="project">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1</p>
+                <h3>Calculator</h3>
+                <p>Javascript Calculator</p>
+                <img src="calculator.jpg" alt="Project 1">
             </div>
             <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2</p>
+                <h3>A react base news site</h3>
+                <p>ReactJs based News site.</p>
+                <img src="download.jpg" alt="Project 2">
             </div>
+            <!-- Add more projects as needed -->
         </div>
     </section>
 
+    <!-- Resume Section -->
     <section id="resume">
-        <div class="container">
+        <div class="resume-container">
             <h2>Resume</h2>
-            <a href="resume.pdf" download>Download Resume</a>
+            <p><a href="resume.pdf" target="_blank">Download Resume (PDF)</a></p>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: john@example.com</p>
-            <p>Phone: 123-456-7890</p>
+        <div class="contact-container">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: aditya.raj.mec22@iitbhu.ac.in</li>
+              
+            </ul>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2024 John Doe. All rights reserved.</p>
-            <p>Website: <a href="https://www.johndoe.com">www.johndoe.com</a></p>
+        <div class="footer-container">
+            <p>&copy; 2024 Aditya Raj. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/aditya-raj-99b89b258/?lipi=urn%3Ali%3Apage%3Ad_flagship3_people%3BM8tHme%2FkSiOsEvZy1sxMAg%3D%3D">LinkedIn</a></li>
+                
+                <!-- Add more links as needed -->
+            </ul>
         </div>
     </footer>
 </body>

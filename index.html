@@ -3,51 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Raj</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Aditya Raj - Web Developer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .jumbotron {
+            background-color: #007bff;
+            color: #fff;
+            padding: 100px 25px;
+            margin-bottom: 0;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Landing Page</h1>
-        <nav>
-            <ul>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="calculator.html">Calculator</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="hero">
-        <h2>Welcome to Aditya's Website</h2>
-        <p>You are welcome here.</p>
-        <a href="#pricing" class="cta-btn">Get Started</a>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Aditya Raj</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculator.html">Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron with animated text -->
+<div class="jumbotron animate__animated animate__fadeInDown">
+    <h1 class="display-4">Aditya Raj</h1>
+    <p class="lead">Web Development Enthusiast</p>
+</div>
+
+<!-- Main Content -->
+<div class="container mt-4">
+    <section id="about" class="animate-in-view">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Me</h2>
+                <p>Hello! I'm Aditya Raj, a student at IIT(BHU) currently learning web development.</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Placeholder for an image or additional content -->
+            </div>
+        </div>
     </section>
 
-    
+    <hr>
 
-    <section id="pricing">
-        <h2>Pricing</h2>
-        <p>Choose the plan that suits you best.</p>
+    <section id="portfolio" class="animate-in-view">
+        <h2>Portfolio</h2>
+        <div class="row">
+            <!-- Example portfolio items -->
+            <div class="col-md-4 mb-4">
+                <div class="card animate__animated animate__fadeInUp">
+                    <img src="portfolio.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio</h5>
+                        <p class="card-text">My portfolio</p>
+                        <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card animate__animated animate__fadeInUp">
+                    <img src="calculator.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculator</h5>
+                        <p class="card-text">A JavaScript/HTML calculator</p>
+                        <a href="calculator.html" class="btn btn-primary">Visit Calculator</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact" class="animate-in-view">
+        <h2>Contact</h2>
+        <p>Reach out to me through the following channels:</p>
         <ul>
-            <li>Basic - $10/month</li>
-            <li>Pro - $20/month</li>
-            <li>Premium - $30/month</li>
+            <li>Email: aditya.raj.mec22@iitbhu.ac.in</li>
         </ul>
     </section>
+</div>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <input type="text" name="name" placeholder="Your Name">
-            <input type="email" name="email" placeholder="Your Email">
-            <textarea name="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p>
+            <a href="link-to-your-resume" target="_blank" class="text-white">Resume</a> |
+            <a href="link-to-your-linkedin-profile" target="_blank" class="text-white">LinkedIn</a>
+        </p>
+    </div>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 Aditya Raj. All rights reserved.</p>
-    </footer>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Animate.css -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+
+<!-- Smooth scrolling script -->
+<script>
+    // Smooth scrolling using jQuery easing
+    $(document).ready(function() {
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        // Check if element is in view
+        function isElementInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Add animation class when element comes into view
+        $(window).on('scroll', function() {
+            $('.animate-in-view').each(function() {
+                if (isElementInViewport(this)) {
+                    $(this).addClass('visible animate__animated animate__fadeInUp');
+                }
+            });
+        });
+    });
+</script>
+
 </body>
 </html>
